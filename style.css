@@ -479,6 +479,8 @@ span.member::before {
 
 /* ======== Main ======== */
 
+/* ========== PROMO =========== */
+
 .promo {
     position: relative;
     width: 100%;
@@ -801,8 +803,131 @@ span.member::before {
     align-items: center;
 }
 
+.searchbox__text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #9fb0c0;
+    width: 145px;
+    padding: 20px 0;
+    border-right: 1px solid #3a4e61;
+    position: relative;
+}
 
-  
+.searchbox__text span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.searchbox__text::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(100% - 5px);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2c3e50;
+    border-radius: 2px;
+    border: solid #3a4e61;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+}
+
+.searchbox__form__inner {
+    display: flex;
+    margin-left: 40px;
+}
+
+.form__area__where,
+.form__area__when {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchbox__label {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.36;
+    color: #9fb0c0;
+    margin-right: 20px;
+}
+
+.searchbox__input {
+    box-sizing: border-box;
+    width: 325px;
+    height: 48px;
+    border: none;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.searchbox__input[type="date"] {
+    color: #ffffff;
+}
+
+.searchbox__input[type="date"]::before {
+    color: #8a8a8a;
+    content: attr(placeholder);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.searchbox__input[type="date"]:focus::before  {
+    content: "" !important;
+}
+
+.form__area__where::after,
+.form__area__when::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 18px);
+    left: calc(99% - 36px);
+    width: 36px;
+    height: 36px;
+    z-index: 5;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.form__area__where::after {
+    background-image: url("images/form/place.png");
+}
+
+.form__area__when::after {
+    background-image: url("images/form/date.png");
+}
+
+.button__submit {
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #1dd2af;
+    border: none;
+    padding: 0 23px;
+    cursor: pointer;
+    transition: all 0.2 linear;
+}
+
+.button__submit:active {
+    transform: scale(0.95);
+}
+
+.button__submit:focus {
+    outline: none;
+    box-shadow: none;
+}
 
   
 
