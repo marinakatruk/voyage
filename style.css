@@ -812,6 +812,7 @@ span.member::before {
     color: #9fb0c0;
     width: 145px;
     padding: 20px 0;
+    margin-left: 10px;
     border-right: 1px solid #3a4e61;
     position: relative;
 }
@@ -931,6 +932,126 @@ searchbox__inpu[type="textarea"] {
 .button__submit:focus {
     outline: none;
     box-shadow: none;
+}
+
+@media (max-width: 1170px) {
+    .searchbox__inner {
+        justify-content: space-around;
+    }
+
+    .searchbox__text {
+        padding: 10px 15px 10px 0;
+        font-size: 15px;
+        width: 100px;
+
+    }
+
+    .searchbox__text span {
+        font-size: 20px;
+    }
+
+    .searchbox__form__inner {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .form__area__where,
+    .form__area__when {
+        margin-right: 15px;
+    }
+
+    .searchbox__label {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .searchbox__input {
+        width: 230px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .form__area__where::after,
+    .form__area__when::after {
+        background-size: 16px 16px;
+    }
+
+    .button__submit {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    .searchbox__text {
+        display: none;
+    }
+
+    .searchbox__form__inner {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .form__area__where,
+    .form__area__when {
+        margin-right: 10px;
+    }
+
+    .searchbox__label {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .searchbox__input {
+        width: 210px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .form__area__where::after,
+    .form__area__when::after {
+        background-size: 12px 12px;
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        left: calc(99% - 30px);
+    }
+
+    .button__submit {
+        font-size: 13px;
+        padding: 0 12px;
+        margin-left: 5px;
+        font-weight: 300;
+    }
+
+    .searchbox__form__inner {
+        margin: 15px 10px;
+    }
+}
+    
+    
+@media (max-width: 630px) {
+    .searchbox__form__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__area__where,
+    .form__area__when {
+        margin: 0 0 15px 0;
+        width: 260px;
+        justify-content: space-between;
+    }
+
+    .button__submit {
+        margin: 0;
+        padding: 5px 12px;
+    }
+
+
+
+
 }
 
   
