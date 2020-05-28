@@ -870,7 +870,7 @@ span.member::before {
     display: inline-block;
 }
 
-searchbox__inpu[type="textarea"] {
+.searchbox__input[type="textarea"] {
     color: #8a8a8a;
 }
 
@@ -1048,10 +1048,6 @@ searchbox__inpu[type="textarea"] {
         margin: 0;
         padding: 5px 12px;
     }
-
-
-
-
 }
 
   
