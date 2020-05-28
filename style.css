@@ -408,7 +408,7 @@ span.member::before {
 
     .social__item:nth-child(4) {
         border-right: none;
-        box-shadow: none;%      su
+        box-shadow: none;
     }
 }
 
@@ -867,6 +867,10 @@ span.member::before {
     line-height: 1.5;
     padding-left: 10px;
     display: inline-block;
+}
+
+searchbox__inpu[type="textarea"] {
+    color: #8a8a8a;
 }
 
 .searchbox__input[type="date"] {
