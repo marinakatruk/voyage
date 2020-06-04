@@ -118,7 +118,6 @@
 
 .offers__item:hover .offers__image {
     height: 220px;
-    width: 266px;
     margin: 0;
 }
 
@@ -134,6 +133,126 @@
     border: solid #ffffff;
     border-width: 0 2px 2px 0;
 }
+
+@media (max-width: 1200px) {
+    .offers__item:nth-child(2),
+    .offers__item:nth-child(5) {
+        opacity: 0.45;
+    }
+
+    .offers__item:hover {
+        opacity: 1;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .offers__title {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .offers__text {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .offers__name {
+        font-size: 14px;
+    }
+
+    .offers__descr {
+        font-size: 12px;
+    }
+
+    .offers__item {
+        width: 220px;
+        height: 210px;
+    }
+
+    .offers__image {
+        width: 220px;
+        height: 161px;
+    }
+
+    .offers__info {
+        padding-left: 10px;
+    }
+
+    .offers__item:hover {
+        height: 260px;
+    }
+
+    .offers__item:hover .offers__image {
+        height: 190px;
+        margin: 0;
+    }
+
+    .offers__items {
+        margin-bottom: 70px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .offers__item:first-child {
+        margin-left: -250px;
+    }
+
+    .offers__item:nth-child(3) {
+        opacity: 0.45;
+    }
+
+    .offers__item:hover {
+        opacity: 1;
+    }
+
+    .offers__title {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .offers__text {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .offers__items {
+        margin-bottom: 40px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .offers__item:nth-child(4) {
+        height: 260px;
+        background-color: #2c3e50;
+        border: 5px solid #1dd2af;
+    }
+
+    .offers__item:nth-child(4) .offers__image {
+        height: 190px;
+        margin: 0;
+    }
+    
+    .offers__item:nth-child(4) .offers__name {
+        color: #ffffff;
+    }
+    
+    .offers__item:nth-child(4) .offers__descr {
+        color: #8899a8;
+    }
+    
+    .offers__item:nth-child(4) .offers__info::after {
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+    }
+
+}
+
 
 
 
