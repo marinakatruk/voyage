@@ -1,0 +1,127 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.reviews__title {
+    font-size: 25px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-top: 70px;
+}
+
+.reviews__text {
+    font-size: 16px;
+    line-height: 1.5625;
+    font-weight: 400;
+    color: #626262;
+    margin-top: 5px;
+}
+
+.reviews__items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 50px 0 150px;
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 475px;
+    height: 140px;
+    border: 2px solid #eeeeee;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.reviews__content {
+    font-size: 15.28px;
+    line-height: 1.3632;
+    font-weight: 400;
+    color: #4d4d4d;
+    margin: 0 0 0 20px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.reviews__client {
+    font-size: 18.06px;
+    line-height: 1.3843;
+    font-weight: 400;
+    color: #1dd2af;
+    margin: 0 0 0 20px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.reviews__country {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #b2b2b2;
+    margin: 0 0 0 20px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.reviews__item:first-child {
+    margin-left: 170px;
+}
+
+.reviews__item::after {
+    content: "";
+    position: absolute;
+    top: 82%;
+    left: calc(100% - 95px);
+    width: 40px;
+    height: 50px;
+    background-color:#ffffff;
+    border: solid #eeeeee;
+    border-width: 2px 0 0 2px;
+    transform: rotate(260deg) skew(30deg, -10deg);
+    transition: all 0.2s;
+}
+
+.reviews__item:hover {
+    border: 2px solid #dedede;
+    box-shadow: inset 0 5px 0 0 #1dd2af;
+}
+
+.reviews__item:hover .reviews__content {
+    opacity: 1;
+}
+
+.reviews__item:hover .reviews__client {
+    opacity: 1;
+}
+
+.reviews__item:hover .reviews__country {
+    opacity: 1;
+}
+
+.reviews__item:hover::after {
+    top: 89%;
+    left: calc(100% - 95px);
+    width: 40px;
+    height: 30px;
+    background-color: #ffffff;
+    border: solid #dedede;
+    border-width: 2px 0 0 2px;
+    transform: rotate(217deg);
+}
+
+
+
+
+
