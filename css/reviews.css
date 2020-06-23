@@ -171,6 +171,10 @@
 }
 
 @media (max-width: 750px) {
+    .footer__top__inner {
+        justify-content: center;
+    }
+
     .reviews__title {
         font-size: 20px;
         margin-top: 50px;
